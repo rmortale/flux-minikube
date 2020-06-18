@@ -4,6 +4,7 @@ metadata:
   labels:
     app: staticweb
   name: staticweb
+  namespace: demo
 spec:
   replicas: 1
   selector:
