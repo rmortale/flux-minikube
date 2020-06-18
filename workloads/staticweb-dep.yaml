@@ -17,5 +17,5 @@ spec:
         app: staticweb
     spec:
       containers:
-      - image: rmortale/static-web:sha-d39d5e1
+      - image: rmortale/static-web
         name: static-web
