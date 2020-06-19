@@ -1,6 +1,8 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
+  annotations:
+    fluxcd.io/automated: "true"
   labels:
     app: staticweb
   name: staticweb
@@ -17,5 +19,5 @@ spec:
         app: staticweb
     spec:
       containers:
-      - image: rmortale/static-web
+      - image: rmortale/static-web:sha-4e5465c
         name: static-web
